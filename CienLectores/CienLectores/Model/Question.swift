@@ -16,4 +16,5 @@ struct Question {
         self.name = name
         self.answers = answers
     }
+    
 }

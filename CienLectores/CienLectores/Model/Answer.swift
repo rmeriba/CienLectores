@@ -11,10 +11,12 @@ import Foundation
 struct Answer {
     var name: String
     var answerScore: Int
+    var isShow: Bool
     
     init(name: String, answerScore: Int) {
         self.name = name
         self.answerScore = answerScore
+        self.isShow = false
     }
 }
 

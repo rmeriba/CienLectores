@@ -9,11 +9,9 @@
 import Foundation
 
 struct Game {
-    var teams: [Team]
-    var questions: [Question]
-    
-    init(teams: [Team], questions: [Question]) {
-        teams.self = teams
-        questions.self = questions
-    }
+    /// Singlentón
+    static var share = Game()
+    var teams: [Team] = []
+    var questions: [Question] = []
+    private init () {}
 }
