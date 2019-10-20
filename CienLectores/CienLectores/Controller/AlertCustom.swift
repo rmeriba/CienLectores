@@ -14,6 +14,8 @@ class AlertCustom: UIViewController {
     
     @IBOutlet weak var errorMessage: UILabel!
     @IBOutlet weak var viewContent: UIView!
+    @IBOutlet weak var viewAlert: UIView!
+    @IBOutlet weak var btnOK: UIButton!
     
     weak var delegate: AlertCustomDelegate?
     override func viewDidLoad() {
@@ -24,6 +26,9 @@ class AlertCustom: UIViewController {
         //self.viewContent.layer.borderWidth = 8
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.selectViewContent(_:)))
         self.viewContent.addGestureRecognizer(tapGesture)
+        self.viewAlert.layer.cornerRadius = 8
+        self.viewAlert.layer.borderWidth = 1
+        self.btnOK.setConreRadio()
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)

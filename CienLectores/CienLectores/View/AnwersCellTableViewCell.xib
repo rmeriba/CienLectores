@@ -16,24 +16,51 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Respuestas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmt-4d-0mB">
-                        <rect key="frame" x="22" y="6.5" width="290" height="31.5"/>
-                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqh-aK-bMi">
+                        <rect key="frame" x="4" y="4" width="312" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Respuestas" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmt-4d-0mB">
+                                <rect key="frame" x="6" y="0.0" width="259" height="36"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sga-qT-4AF">
+                                <rect key="frame" x="269" y="0.0" width="35" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="rke-1z-Dug"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sga-qT-4AF" firstAttribute="leading" secondItem="zmt-4d-0mB" secondAttribute="trailing" constant="4" id="7uR-oB-Ho9"/>
+                            <constraint firstItem="zmt-4d-0mB" firstAttribute="top" secondItem="rqh-aK-bMi" secondAttribute="top" id="a31-e4-1gm"/>
+                            <constraint firstAttribute="bottom" secondItem="Sga-qT-4AF" secondAttribute="bottom" id="byO-3c-Peq"/>
+                            <constraint firstItem="Sga-qT-4AF" firstAttribute="top" secondItem="rqh-aK-bMi" secondAttribute="top" id="ckf-A8-9Fm"/>
+                            <constraint firstAttribute="trailing" secondItem="Sga-qT-4AF" secondAttribute="trailing" constant="8" id="d2W-CU-I3F"/>
+                            <constraint firstAttribute="bottom" secondItem="zmt-4d-0mB" secondAttribute="bottom" id="f28-su-2XP"/>
+                            <constraint firstItem="zmt-4d-0mB" firstAttribute="leading" secondItem="rqh-aK-bMi" secondAttribute="leading" constant="6" id="vUb-Fv-eDN"/>
+                        </constraints>
+                    </view>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="zmt-4d-0mB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="E4f-xa-jOX"/>
-                    <constraint firstAttribute="trailing" secondItem="zmt-4d-0mB" secondAttribute="trailing" constant="8" id="OpV-GF-525"/>
-                    <constraint firstItem="zmt-4d-0mB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="pSC-PG-DLP"/>
+                    <constraint firstAttribute="bottom" secondItem="rqh-aK-bMi" secondAttribute="bottom" constant="4" id="1Ov-TE-kTC"/>
+                    <constraint firstItem="rqh-aK-bMi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="IqO-vr-tar"/>
+                    <constraint firstAttribute="trailing" secondItem="rqh-aK-bMi" secondAttribute="trailing" constant="4" id="efD-ck-hj2"/>
+                    <constraint firstItem="rqh-aK-bMi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="y1c-iI-jSO"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="lblAnswers" destination="zmt-4d-0mB" id="gVa-8d-yRi"/>
+                <outlet property="lblPoints" destination="Sga-qT-4AF" id="NsC-BJ-ek4"/>
+                <outlet property="viewContente" destination="rqh-aK-bMi" id="jTn-5O-PoW"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </tableViewCell>

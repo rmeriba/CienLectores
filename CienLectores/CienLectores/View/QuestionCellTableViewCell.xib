@@ -16,19 +16,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregunta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7Y-05-vfW">
-                        <rect key="frame" x="105.5" y="4.5" width="109" height="35.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregunta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7Y-05-vfW">
+                        <rect key="frame" x="2" y="4.5" width="316" height="35.5"/>
                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
-                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" white="0.0" alpha="0.82999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="A7Y-05-vfW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="Kpt-Dg-mGP"/>
                     <constraint firstItem="A7Y-05-vfW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Yf1-ax-4uZ"/>
-                    <constraint firstItem="A7Y-05-vfW" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="uL7-is-WrD"/>
+                    <constraint firstAttribute="trailing" secondItem="A7Y-05-vfW" secondAttribute="trailing" constant="2" id="zq9-zN-3uu"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="lblQuestion" destination="A7Y-05-vfW" id="rE1-bg-o9q"/>

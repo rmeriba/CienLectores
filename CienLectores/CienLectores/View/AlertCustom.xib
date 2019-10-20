@@ -9,8 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertCustom" customModule="CienLectores" customModuleProvider="target">
             <connections>
+                <outlet property="btnOK" destination="O1U-57-7B4" id="kLO-Lt-dcB"/>
                 <outlet property="errorMessage" destination="CbC-0A-ehD" id="7v4-Z4-GVk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="mb1-28-a4L"/>
+                <outlet property="viewAlert" destination="SXx-9N-eHa" id="tZk-7y-Yrr"/>
                 <outlet property="viewContent" destination="0s3-Xn-gfY" id="BeH-Qp-VBb"/>
             </connections>
         </placeholder>
@@ -19,11 +21,12 @@
             <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0s3-Xn-gfY">
+                <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0s3-Xn-gfY">
                     <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXx-9N-eHa">
-                    <rect key="frame" x="160" y="170" width="874" height="494"/>
+                    <rect key="frame" x="160" y="166" width="874" height="502"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Oh oh! Intenta de nuevo..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2b-yp-Rex">
                             <rect key="frame" x="239" y="40" width="396.5" height="42"/>
@@ -36,7 +39,7 @@
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X  X  X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbC-0A-ehD">
                             <rect key="frame" x="100" y="156" width="674" height="182"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="674" id="eVk-Ru-RcH"/>
                                 <constraint firstAttribute="height" constant="182" id="mlg-of-01x"/>
@@ -46,7 +49,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1U-57-7B4">
-                            <rect key="frame" x="0.0" y="442" width="874" height="52"/>
+                            <rect key="frame" x="8" y="442" width="858" height="52"/>
                             <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="j4E-ot-Gr1"/>
@@ -62,14 +65,14 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="O1U-57-7B4" secondAttribute="trailing" id="4qP-BD-CYE"/>
-                        <constraint firstItem="O1U-57-7B4" firstAttribute="leading" secondItem="SXx-9N-eHa" secondAttribute="leading" id="Ed5-a3-Sxh"/>
+                        <constraint firstAttribute="trailing" secondItem="O1U-57-7B4" secondAttribute="trailing" constant="8" id="4qP-BD-CYE"/>
+                        <constraint firstItem="O1U-57-7B4" firstAttribute="top" secondItem="CbC-0A-ehD" secondAttribute="bottom" constant="104" id="E7q-sf-mOm"/>
+                        <constraint firstItem="O1U-57-7B4" firstAttribute="leading" secondItem="SXx-9N-eHa" secondAttribute="leading" constant="8" id="Ed5-a3-Sxh"/>
                         <constraint firstItem="CbC-0A-ehD" firstAttribute="top" secondItem="N2b-yp-Rex" secondAttribute="bottom" constant="74" id="Q1l-qe-ErB"/>
-                        <constraint firstAttribute="bottom" secondItem="O1U-57-7B4" secondAttribute="bottom" id="TEP-Ku-nNQ"/>
+                        <constraint firstAttribute="bottom" secondItem="O1U-57-7B4" secondAttribute="bottom" constant="8" id="TEP-Ku-nNQ"/>
                         <constraint firstAttribute="trailing" secondItem="CbC-0A-ehD" secondAttribute="trailing" constant="100" id="ZzT-xo-qEe"/>
-                        <constraint firstItem="O1U-57-7B4" firstAttribute="top" secondItem="CbC-0A-ehD" secondAttribute="bottom" constant="104" id="iCM-cc-DFU"/>
                         <constraint firstItem="N2b-yp-Rex" firstAttribute="centerX" secondItem="SXx-9N-eHa" secondAttribute="centerX" id="lyQ-nA-UON"/>
                         <constraint firstItem="N2b-yp-Rex" firstAttribute="top" secondItem="SXx-9N-eHa" secondAttribute="top" constant="40" id="m8P-nE-WyM"/>
                         <constraint firstItem="CbC-0A-ehD" firstAttribute="leading" secondItem="SXx-9N-eHa" secondAttribute="leading" constant="100" id="qNL-H0-3zz"/>

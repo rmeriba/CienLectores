@@ -14,8 +14,20 @@
                     <view key="view" contentMode="scaleToFill" id="tJG-9N-ZAZ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPZ-Dd-x3o">
+                                <rect key="frame" x="20" y="0.0" width="984" height="718"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.82999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="o3a-pC-QLH"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="XPZ-Dd-x3o" secondAttribute="bottom" id="Jf5-Wh-EEE"/>
+                            <constraint firstItem="XPZ-Dd-x3o" firstAttribute="leading" secondItem="tJG-9N-ZAZ" secondAttribute="leadingMargin" id="MGv-c3-lRd"/>
+                            <constraint firstItem="XPZ-Dd-x3o" firstAttribute="top" secondItem="tJG-9N-ZAZ" secondAttribute="topMargin" id="ZtA-8x-SFQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XPZ-Dd-x3o" secondAttribute="trailing" id="ezD-P0-Tku"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="STf-Cd-9GA"/>
                     </view>
                     <navigationItem key="navigationItem" id="pJG-yM-kQV"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
