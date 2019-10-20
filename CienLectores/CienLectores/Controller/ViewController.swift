@@ -52,8 +52,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 view.lblAnswers.text = Game.share.questions[currentQuestion].answers?[indexPath.row].name
                 view.lblPoints.text = String(Game.share.questions[currentQuestion].answers?[indexPath.row].answerScore ?? 0)
             } else {
-                view.lblAnswers.text = "  * * * * * * * * * * * * * * * * * * * * * * * * * * * "
-                view.lblPoints.text = "**"
+                view.lblAnswers.text = " * * * * * * * * * * * * * * * * * * * * * * * * * * * "
+                view.lblPoints.text = "* *"
             }
             return view
         } else {
