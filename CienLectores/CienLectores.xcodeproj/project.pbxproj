@@ -16,6 +16,9 @@
 		42D20ACB2325E10200D93C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D20ACA2325E10200D93C6C /* Assets.xcassets */; };
 		42D20ACE2325E10200D93C6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D20ACC2325E10200D93C6C /* LaunchScreen.storyboard */; };
 		42D20AD62325E60800D93C6C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D20AD52325E60800D93C6C /* ViewController.xib */; };
+		CC0FE83A235BE5870056103D /* CienLectores+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FE839235BE5870056103D /* CienLectores+UIButton.swift */; };
+		CC0FE83D235BFB310056103D /* forcecommander.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC0FE83C235BFB310056103D /* forcecommander.ttf */; };
+		CC0FE83F235BFB430056103D /* superiorpixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC0FE83E235BFB430056103D /* superiorpixel.ttf */; };
 		FB66F115234976FC0070E8A6 /* QuestionCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66F113234976FC0070E8A6 /* QuestionCellTableViewCell.swift */; };
 		FB66F116234976FC0070E8A6 /* QuestionCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB66F114234976FC0070E8A6 /* QuestionCellTableViewCell.xib */; };
 		FB66F1192349A38F0070E8A6 /* AnwersCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66F1172349A38F0070E8A6 /* AnwersCellTableViewCell.swift */; };
@@ -38,6 +41,9 @@
 		42D20ACD2325E10200D93C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42D20ACF2325E10200D93C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D20AD52325E60800D93C6C /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		CC0FE839235BE5870056103D /* CienLectores+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CienLectores+UIButton.swift"; sourceTree = "<group>"; };
+		CC0FE83C235BFB310056103D /* forcecommander.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = forcecommander.ttf; sourceTree = "<group>"; };
+		CC0FE83E235BFB430056103D /* superiorpixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = superiorpixel.ttf; sourceTree = "<group>"; };
 		FB66F113234976FC0070E8A6 /* QuestionCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCellTableViewCell.swift; sourceTree = "<group>"; };
 		FB66F114234976FC0070E8A6 /* QuestionCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCellTableViewCell.xib; sourceTree = "<group>"; };
 		FB66F1172349A38F0070E8A6 /* AnwersCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnwersCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -124,12 +130,31 @@
 		42D20AC22325E10000D93C6C /* CienLectores */ = {
 			isa = PBXGroup;
 			children = (
+				CC0FE83B235BFB010056103D /* fonts */,
+				CC0FE838235BE55E0056103D /* Utils */,
 				4223A25C23334730000EA440 /* Supporting Files */,
 				4223A25B23334705000EA440 /* Controller */,
 				4223A25A233346FB000EA440 /* View */,
 				4223A259233346E7000EA440 /* Model */,
 			);
 			path = CienLectores;
+			sourceTree = "<group>";
+		};
+		CC0FE838235BE55E0056103D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CC0FE839235BE5870056103D /* CienLectores+UIButton.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CC0FE83B235BFB010056103D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CC0FE83E235BFB430056103D /* superiorpixel.ttf */,
+				CC0FE83C235BFB310056103D /* forcecommander.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +218,8 @@
 				42D20ACE2325E10200D93C6C /* LaunchScreen.storyboard in Resources */,
 				FB66F116234976FC0070E8A6 /* QuestionCellTableViewCell.xib in Resources */,
 				42D20AD62325E60800D93C6C /* ViewController.xib in Resources */,
+				CC0FE83F235BFB430056103D /* superiorpixel.ttf in Resources */,
+				CC0FE83D235BFB310056103D /* forcecommander.ttf in Resources */,
 				FB671E022356C53D0038408B /* Main.storyboard in Resources */,
 				FB66F11A2349A38F0070E8A6 /* AnwersCellTableViewCell.xib in Resources */,
 				42D20ACB2325E10200D93C6C /* Assets.xcassets in Resources */,
@@ -207,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0FE83A235BE5870056103D /* CienLectores+UIButton.swift in Sources */,
 				FB66F115234976FC0070E8A6 /* QuestionCellTableViewCell.swift in Sources */,
 				4223A26223387B75000EA440 /* Question.swift in Sources */,
 				4223A26023387B6C000EA440 /* Team.swift in Sources */,

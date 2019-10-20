@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-decorative-borders-clip-art-borders-and-frames-por-freetoedit-ftestickers-lights-frame-freetoedit-5bfd779f2a3f87.8372769915433378871731-2.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-decorative-borders-clip-art-borders-and-frames-por-freetoedit-ftestickers-lights-frame-freetoedit-5bfd779f2a3f87.8372769915433378871731-1.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-decorative-borders-clip-art-borders-and-frames-por-freetoedit-ftestickers-lights-frame-freetoedit-5bfd779f2a3f87.8372769915433378871731.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
